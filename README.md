@@ -34,27 +34,27 @@ The next approach is to create a connection to the database using psycopg2 and s
 ![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-02-21%20at%2019.22.07.png)   
 
 After creating the connection to the database, the cursor was used to create the tables accordingly and commited for the execution to materialize.
-![](h)
+![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.30.56.png)
 
 Next, the data from dataframes was copied to its individual table using the to_sql function as shown;
-![]()
+![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.31.17.png)
 
 To test run it, i ran a *SELECT* statement on the tables
-![]()
+![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.29.27.png)
 
 Now that the datawarehouse is ready, we can start running some analytics query on the data   
 
 * Create a temporary table that joins the orders, order_products and products tables to get information about each other, including the products that were purchased and their department and aisle information.   
-![]()
+![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.31.38.png)
 
 * Create a temporary table that groups the orders by product and finds the total number of times each product was purchased, the total number of times each product was reordered, and the average number of times each product was added to a cart.   
-![]()
+![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.31.45.png)
 
 * Create a temporary table that groups the orders by department and finds the total number of products purchased, the total number of unique products purchased, the total number of products purchased on weekdays vs weekends, and the average time of day that products in each department are ordered.   
-![]()
+![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.31.51.png)
 
 * Create a temporary table that groups the orders by aisle and finds the top 10 most popular aisles, including the total number of products purchased and the total number of unique products purchased from each aisle.   
-![]()
+![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.31.58.png)
 
 * Combine the information from the previous temporary tables into a final table that shows the product ID, product name, department ID, department name, aisle ID, aisle name, total number of times purchased, total number of times reordered, average number of times added to cart, total number of products purchased, total number of unique products purchased, total number of products purchased on weekdays, total number of products purchased on weekends, and average time of day products are ordered in each department.   
-<img src="">
+ ![](https://github.com/Bashman234/sql_project/blob/main/images/Screenshot%202024-01-10%20at%2015.32.04.png)
